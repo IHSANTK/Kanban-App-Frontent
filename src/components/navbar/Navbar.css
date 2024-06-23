@@ -1,0 +1,42 @@
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5087c2;
+    padding: 20px 20px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-task-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-task-button:hover {
+    background-color: #218838;
+  }
+  .text a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  span{
+      margin-right: 50px;
+      color: black;
+      font-weight: 600;
+  }
