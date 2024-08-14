@@ -18,7 +18,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/login', { email, password });
+      const response = await axios.post('/login', { email, password },withCredentials: true);
       console.log('Login successful:', response.data.name);
       if(response.status === 200){
         localStorage.setItem('token', response.data.token);
