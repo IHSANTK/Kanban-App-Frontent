@@ -1,6 +1,9 @@
 
+
 import React from 'react';
 import { Draggable } from 'react-beautiful-dnd';
+import { MdDeleteOutline } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
 
 const Task = ({ task, index, onDelete, onEdit }) => {
   const myStyle = {
@@ -18,8 +21,8 @@ const Task = ({ task, index, onDelete, onEdit }) => {
         >
           {task.content}
           <div className="task-buttons">
-            <button onClick={() => onDelete(task.id)} style={myStyle}><i class="fa-solid fa-trash"></i></button>
-            <button onClick={() => onEdit(task)}><i class="fa-regular fa-pen-to-square"></i></button>
+            <button onClick={() => onDelete(task.id)} style={myStyle}><MdDeleteOutline size={20} /></button>
+            <button onClick={() => onEdit(task)}><FaEdit size={15} /></button>
           </div>
         </div>
       )}
