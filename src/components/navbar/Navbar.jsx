@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -20,7 +21,7 @@ const Navbar = ({ onAddTask,name,logout }) => {
         <span >{name}</span>
        
         {name ? (
-          <button onClick={logout} >Logout</button>
+          <button className='logout' onClick={logout} >Logout</button>
         ) : (
           <Link to="/login">Signin</Link>
         )}
