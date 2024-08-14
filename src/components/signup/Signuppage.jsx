@@ -33,7 +33,7 @@ export default function SignupPage() {
         email: formData.email,
         username: formData.username,
         password: formData.password,
-      });
+      },withCredentials: true);
       console.log('User created:', response.data.name);
       if(response.status === 200){
         localStorage.setItem('token', response.data.token);
