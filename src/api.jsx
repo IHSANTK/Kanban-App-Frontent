@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://kanban-app-backent.onrender.com';
 
 const instance = axios.create({
   baseURL: BASE_URL,
